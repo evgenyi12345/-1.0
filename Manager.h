@@ -4,9 +4,9 @@
 
 class Manager :public EmployeeBase {
 public:
-	Manager();
-	~Manager();
-	void printInfo() const override;
+	Manager             ();
+	~Manager            ();
+	void                printInfo() const override;
 };
 #endif // !MANAGER_H
 

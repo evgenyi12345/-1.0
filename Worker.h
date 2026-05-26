@@ -4,9 +4,9 @@
 
 class Worker :public EmployeeBase {
 public:
-	Worker();
-	~Worker();
-	void printInfo() const override;
+	Worker            ();
+	~Worker           ();
+	void              printInfo() const override;
 };
 #endif // !WORKER_H
 

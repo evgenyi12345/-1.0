@@ -12,6 +12,7 @@
 int main() {
 	setlocale(LC_ALL, "RU");
 	Logger log;
+
 	std::unique_ptr<EmployeeBase>user1 = std::make_unique<EmployeeBase>("Tom", "Бухгалтер");
 	std::unique_ptr<EmployeeBase>user2 = std::make_unique<EmployeeBase>("Ric", "Менеджер по продажам");
 	std::unique_ptr<EmployeeBase>user3 = std::make_unique<EmployeeBase>("Nadia", "Менеджер по закупкам");

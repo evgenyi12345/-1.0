@@ -13,8 +13,8 @@ public:
 	std::string            getName() const;
 	virtual                void printInfo() const;
 private:
-	std::string name_;
-	std::string profession_;
+	std::string            name_;
+	std::string            profession_;
 };
 
 

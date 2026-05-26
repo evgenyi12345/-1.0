@@ -4,9 +4,9 @@
 
 class Intern :public EmployeeBase {
 public:
-	Intern();
-	~Intern();
-	void printInfo() const override;
+	Intern              ();
+	~Intern             ();
+	void                printInfo() const override;
 };
 #endif // !INTERN_H
 
