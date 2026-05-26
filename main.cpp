@@ -7,6 +7,7 @@
 #include "Logger.h"
 #include "Intern.h"
 #include "Manager.h"
+#include "Worker.h"
 
 int main() {
 	setlocale(LC_ALL, "RU");
@@ -27,8 +28,12 @@ int main() {
 	company.printInfo();
 	company.listAll();
 
+	Worker worker;
+	worker.printInfo();
+
 	Manager manager;
 	manager.printInfo();
+
 	Intern intern;
 	intern.printInfo();
 
