@@ -10,5 +10,5 @@ Intern::~Intern()
 
 void Intern::printInfo() const
 {
-	std::cout << "Обязанности: Стажер что-то делает." << "\n";
+	std::cout << "Duties: The intern is doing something." << "\n";         // "Обязанности: Стажер что-то делает."
 }

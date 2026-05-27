@@ -13,13 +13,13 @@ int main() {
 	setlocale(LC_ALL, "RU");
 	Logger log;
 
-	std::unique_ptr<EmployeeBase>user1 = std::make_unique<EmployeeBase>("Tom", "Бухгалтер");
-	std::unique_ptr<EmployeeBase>user2 = std::make_unique<EmployeeBase>("Ric", "Менеджер по продажам");
-	std::unique_ptr<EmployeeBase>user3 = std::make_unique<EmployeeBase>("Nadia", "Менеджер по закупкам");
-	std::unique_ptr<EmployeeBase>user4 = std::make_unique<EmployeeBase>("John", "Оператор 'ЧПУ' стонка");
-	std::unique_ptr<EmployeeBase>user5 = std::make_unique<EmployeeBase>("Victor", "Стажер");
+	std::unique_ptr<EmployeeBase>user1 = std::make_unique<EmployeeBase>("Tom", "Accountant");
+	std::unique_ptr<EmployeeBase>user2 = std::make_unique<EmployeeBase>("Ric","Sales Manager");
+	std::unique_ptr<EmployeeBase>user3 = std::make_unique<EmployeeBase>("Nadia", "Purchasing Manager");
+	std::unique_ptr<EmployeeBase>user4 = std::make_unique<EmployeeBase>("John", "CNC Operator Station");
+	std::unique_ptr<EmployeeBase>user5 = std::make_unique<EmployeeBase>("Victor","Intern");
 
-	Company company("SmartGrain","Производство зерносушилок");
+	Company company("SmartGrain", "Production of grain dryers");
 
 	company.addEmployee(std::move(user1));
 	company.addEmployee(std::move(user2));

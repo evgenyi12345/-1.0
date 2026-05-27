@@ -34,7 +34,7 @@ std::string EmployeeBase::getName() const
 
 void EmployeeBase::printInfo() const
 {
-	std::cout << "Имя сотрудника- " << name_ << "\n";
-	std::cout << "Должность- " << profession_ << "\n";
+	std::cout << "The employee's name is " << name_ << "\n";         // "Имя сотрудника- "
+	std::cout << "Position- " << profession_ << "\n";        // "Должность- "
 	std::cout << "\n";
 }
