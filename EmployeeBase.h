@@ -6,15 +6,17 @@
 class EmployeeBase {
 public:
 	EmployeeBase           ();
-	EmployeeBase           (const std::string& name_, const std::string& profession_);
+	EmployeeBase           (const std::string& name_, const std::string& profession_, double salary_);
 	virtual                ~EmployeeBase();
 	EmployeeBase           (const EmployeeBase& other);
 	EmployeeBase&          operator=(const EmployeeBase& other);
-	std::string            getName() const;
+	const std::string&     getName() const;
+	double                 getSalary() const;
 	virtual                void printInfo() const;
 private:
 	std::string            name_;
 	std::string            profession_;
+	double                 salary_;
 };
 
 

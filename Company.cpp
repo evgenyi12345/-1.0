@@ -25,7 +25,7 @@ void Company::addEmployee(std::unique_ptr<EmployeeBase> employee)
 	}
 }
 
-std::string Company::getName()
+std::string Company::getName() const
 {
 	return companyName_;
 }
@@ -48,7 +48,12 @@ void Company::listAll()
 
 void Company::totalPay() 
 {
-	
+	double totalSalary = 0.0;
+	for (const auto& emp : employees) {
+		totalSalary += emp.get()->getSalary();
+	}
+	std::cout << "Total payroll for company '" << companyName_ << "': " << totalSalary << "\n";
+
 }
 
 void Company::printInfo() const

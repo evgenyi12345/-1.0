@@ -10,5 +10,5 @@ Worker::~Worker()
 
 void Worker::printInfo() const
 {
-	std::cout << "Обязанности: Бухгалтер считает налоги." << "\n";
+	std::cout << "Responsibilities: An accountant counts taxes." << "\n";      // "Обязанности: Бухгалтер считает налоги."
 }

@@ -13,7 +13,7 @@ public:
 	Company             (const std::string& companyName_,const std::string& profession_);       // Конструктор параметризованный      
 	~Company            ();                                                                     // Виртуальный деструктор
 	void                addEmployee(std::unique_ptr<EmployeeBase> employee);                    // Добавление сотрудника
-	std::string         getName();                                                              // Возвращаем имя
+	std::string         getName() const;                                                              // Возвращаем имя
 	void                listAll();                                                              // Перечисляем всех сотрудников
 	void                totalPay();                                                             // Сумма фонда
 	void                printInfo() const override;                                             // Выводим всю информацию

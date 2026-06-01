@@ -10,6 +10,6 @@ Manager::~Manager()
 
 void Manager::printInfo() const
 {
-	std::cout << "Обязанности: Менеджер(по продажам)  занимается продажами." << "\n";
-	std::cout << "Обязанности: Менеджер(по закупке) занимается закупками." << "\n";
+	std::cout << "Responsibilities: The (sales) manager is in charge of sales." << "\n";     // "Обязанности: Менеджер(по продажам)  занимается продажами."
+	std::cout << "Responsibilities: The (purchasing) manager handles the purchases." << "\n";          // "Обязанности: Менеджер(по закупке) занимается закупками."
 }
