@@ -10,3 +10,4 @@ Logger::~Logger()
 {
 	std::cout << "===The program has finished its work.===" << "\n";                      // "===Программа закончила работу.==="
 }
+

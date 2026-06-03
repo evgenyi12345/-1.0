@@ -4,9 +4,14 @@
 
 class Manager :public EmployeeBase {
 public:
-	Manager             ();
+	Manager             (const std::string& name_, const std::string& profession_, double salary_);
 	~Manager            ();
 	void                printInfo() const override;
+private:
+	std::string            name_;
+	std::string            profession_;
+	double                 salary_;
+
 };
 #endif // !MANAGER_H
 

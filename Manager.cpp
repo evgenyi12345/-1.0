@@ -1,6 +1,6 @@
 #include "Manager.h"
 
-Manager::Manager()
+Manager::Manager(const std::string& name_, const std::string& profession_, double salary_) :name_(name_), profession_(profession_), salary_(salary_)
 {
 }
 
@@ -10,6 +10,8 @@ Manager::~Manager()
 
 void Manager::printInfo() const
 {
-	std::cout << "Responsibilities: The (sales) manager is in charge of sales." << "\n";     // "Обязанности: Менеджер(по продажам)  занимается продажами."
-	std::cout << "Responsibilities: The (purchasing) manager handles the purchases." << "\n";          // "Обязанности: Менеджер(по закупке) занимается закупками."
+	std::cout << "Name-" << name_ << "\n";
+	std::cout << "Profession-" << profession_ << "\n";
+	std::cout << "Salary-" << salary_ << "\n";
+	std::cout << "\n";
 }

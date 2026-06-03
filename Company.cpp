@@ -10,6 +10,7 @@ Company::Company()
 Company::Company(const std::string& companyName_, const std::string& profession_) :companyName_(companyName_), profession_(profession_)
 {
 	std::cout << "Company name: " << companyName_ << "\n";            // "Название компании: "
+	std::cout << "Company's business type: " << profession_ << "\n";                        // "Род деятельности компании: "
 }
 
 Company::~Company()
@@ -58,7 +59,7 @@ void Company::totalPay()
 
 void Company::printInfo() const
 {
-	std::cout << "Company's business type: " << profession_ << "\n";                        // "Род деятельности компании: "
-	std::cout << "\nList of employees:" << "\n";                                              // "\nСписок сотрудников:"
+	std::cout << "Number of added employees:" << employees.size() << "\n";                                              // "Колличество добавленных сотрудников:"
+	
 }
 
