@@ -13,7 +13,7 @@ int main() {
 	setlocale(LC_ALL, "RU");
 	Logger log;
 
-	std::unique_ptr<Worker> user1 = std::make_unique<Worker>("Tom", "Accountant", 100);
+	std::unique_ptr<EmployeeBase> user1 = std::make_unique<Worker>("Tom", "Accountant", 100);
 	std::unique_ptr<Manager> user2 = std::make_unique<Manager>("Ric", "Sales Manager", 80);
 	std::unique_ptr<Manager> user3 = std::make_unique<Manager>("Nadia", "Purchasing Manager", 80);
 	std::unique_ptr<Intern> user4 = std::make_unique<Intern>("John", "CNC Operator Station", 80);
