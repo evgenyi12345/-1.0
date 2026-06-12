@@ -31,7 +31,7 @@ std::string Company::getName() const
 	return companyName_;
 }
 
-void Company::listAll()
+void Company::listAll() const
 {
 	if (employees.empty()) {
 		std::cout << "The company doesn't have any employees yet." << "\n";                // "В компании пока нет сотрудников."
@@ -51,7 +51,7 @@ void Company::totalPay()
 {
 	double totalSalary = 0.0;
 	for (const auto& emp : employees) {
-		totalSalary += emp.get()->getSalary();
+		totalSalary += emp->getSalary();
 	}
 	std::cout << "Total payroll for company '" << companyName_ << "': " << totalSalary << "\n";
 

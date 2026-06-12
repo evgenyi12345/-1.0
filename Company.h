@@ -14,7 +14,7 @@ public:
 	~Company            ();                                                                     // Виртуальный деструктор
 	void                addEmployee(std::unique_ptr<EmployeeBase> employee);                    // Добавление сотрудника
 	std::string         getName() const;                                                        // Возвращаем имя
-	void                listAll();                                                              // Перечисляем всех сотрудников
+	void                listAll()const;                                                              // Перечисляем всех сотрудников
 	void                totalPay();                                                             // Сумма фонда
 	void                printInfo() const ;                                             // Выводим всю информацию
 private:
