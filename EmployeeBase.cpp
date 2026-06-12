@@ -6,7 +6,7 @@ EmployeeBase::EmployeeBase() :name_("Unknown"), profession_("Unknown"), salary_(
 {
 }
 
-EmployeeBase::EmployeeBase(const std::string& name_, const std::string& profession_, double salary_) :name_(name_), profession_(profession_), salary_(salary_)
+EmployeeBase::EmployeeBase(const std::string& name_, const std::string& profession_, double salary_,int ID_) :name_(name_), profession_(profession_), salary_(salary_),ID_(ID_)
 {
 }
 
@@ -43,5 +43,14 @@ void EmployeeBase::printInfo() const
 	std::cout << "The employee's name is " << name_ << "\n";         // "Имя сотрудника- "
 	std::cout << "Position- " << profession_ << "\n";        // "Должность- "
 	std::cout << "Salary- " << salary_ << "\n";
+	std::cout << "Employee ID: " << ID_ << "\n";
 	std::cout << "\n";
 }
+
+void EmployeeBase::setEmployeeID(int id)
+{
+	this->ID_ = id;
+}
+
+
+
