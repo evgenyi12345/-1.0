@@ -14,7 +14,7 @@ EmployeeBase::~EmployeeBase()
 {
 }
 
-EmployeeBase::EmployeeBase(const EmployeeBase& other) :name_(other.name_), profession_(other.profession_), salary_(other.salary_)
+EmployeeBase::EmployeeBase(const EmployeeBase& other) :name_(other.name_), profession_(other.profession_), salary_(other.salary_),ID_(other.ID_)
 {
 }
 
@@ -51,6 +51,8 @@ void EmployeeBase::setEmployeeID(int id)
 {
 	this->ID_ = id;
 }
+
+
 
 
 

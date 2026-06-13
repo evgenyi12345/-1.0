@@ -14,6 +14,7 @@ public:
 	double                 getSalary() const;
 	virtual                void printInfo() const;
 	void                   setEmployeeID(int id);
+	
 private:
 	std::string            name_;
 	std::string            profession_;
