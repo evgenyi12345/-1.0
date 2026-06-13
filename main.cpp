@@ -30,5 +30,5 @@ int main() {
 	std::cout << "\nList of employees" << "\n";
 	company.printInfo();
 	company.listAll();
-	company.findByld(6);
+	company.findByld();
 }
