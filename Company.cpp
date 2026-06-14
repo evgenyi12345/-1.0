@@ -71,9 +71,19 @@ void Company::findByld()
     int id;                                                                                                  // Объявляем переменную для введенного ID
 
     std::cout << "Выберите сотрудника по ID начиная с 1 до 5: "; 
-    std::cin >> id;                                                                                             // Считываем ID, введенный пользователем
-
-                                                                                                               // Теперь используем switch ТОЛЬКО для id
+    std::cin >> id;  // Считываем ID, введенный пользователем
+	bool found = false;
+	int currentId = 1;
+	for (auto& empPtr : employees) {
+		if (currentId == id) {
+			std::cout << "Found employee: " << "\n";
+			empPtr->printInfo();
+			found = true;
+			break;
+		}
+		currentId++;
+	}
+   /*                                                                                                            // Теперь используем switch ТОЛЬКО для id
     switch (id) {
     case 1: {
 		std::cout << "Name-Tom; Profession-Accountant; Salary-100; ID-1" << "\n";
@@ -100,10 +110,11 @@ void Company::findByld()
         break;
     }
     default: { 
-      
         break;
     }
+	
     }
+	*/
 	if (id <= 0 || id > totalEmployees_) {                                                                              // Проверяем, что ID в допустимом диапазоне
 		std::cout << "Employee with ID " << id << " not found or ID is invalid in '" << companyName_ << "'." << "\n";
 		return;

@@ -13,11 +13,11 @@ int main() {
 	setlocale(LC_ALL, "RU");
 	Logger log;
 
-	std::unique_ptr<EmployeeBase> emp1 = std::make_unique<Worker>("Tom", "Accountant", 100);
-	std::unique_ptr<EmployeeBase> emp2 = std::make_unique<Manager>("Ric", "Sales Manager", 80);
-	std::unique_ptr<EmployeeBase> emp3 = std::make_unique<Manager>("Nadia", "Purchasing Manager",80);
-	std::unique_ptr<EmployeeBase> emp4 = std::make_unique<Intern>("John", "CNC Operator Station", 80);
-	std::unique_ptr<EmployeeBase> emp5 = std::make_unique<Intern>("Victor", "Intern", 55);
+	std::unique_ptr<EmployeeBase> emp1 = std::make_unique<Worker>("Tom", "Accountant", 100, 12345);
+	std::unique_ptr<EmployeeBase> emp2 = std::make_unique<Manager>("Ric", "Sales Manager", 80, 23432);
+	std::unique_ptr<EmployeeBase> emp3 = std::make_unique<Manager>("Nadia", "Purchasing Manager", 80, 56789);
+	std::unique_ptr<EmployeeBase> emp4 = std::make_unique<Intern>("John", "CNC Operator Station", 80, 98672);
+	std::unique_ptr<EmployeeBase> emp5 = std::make_unique<Intern>("Victor", "Intern", 55, 65468);
 
 	Company company("SmartGrain", "Production of grain dryers", 0);
 	
