@@ -17,7 +17,7 @@ public:
 	void                listAll()const;                                                              // Перечисляем всех сотрудников
 	void                totalPay();                                                             // Сумма фонда
 	void                printInfo() const ;                                             // Выводим всю информацию
-	void                findByld();
+	void                findByld(int id);
 	
 private:
 	std::string         companyName_;

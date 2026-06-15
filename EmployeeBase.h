@@ -11,6 +11,7 @@ public:
 	EmployeeBase           (const EmployeeBase& other);
 	EmployeeBase&          operator=(const EmployeeBase& other);
 	const std::string&     getName() const;
+	int                    getId() const;
 	double                 getSalary() const;
 	virtual                void printInfo() const;
 	void                   setEmployeeID(int id);

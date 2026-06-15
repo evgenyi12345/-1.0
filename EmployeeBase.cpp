@@ -33,6 +33,11 @@ const std::string& EmployeeBase::getName() const
 	return name_;
 }
 
+int EmployeeBase::getId() const
+{
+	return ID_;
+}
+
 double EmployeeBase::getSalary() const
 {
 	return salary_;
